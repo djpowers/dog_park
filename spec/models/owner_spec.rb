@@ -11,4 +11,7 @@ describe Owner do
   it { should have_valid(:email).when("dave@test.com", "johnnyc@test.com")}
   it { should_not have_valid(:email).when('', nil, "dave@") }
 
+  it { should have_many(:dog_owners) }
+  it { should have_many(:dogs).through(:dog_owners) }
+
 end
