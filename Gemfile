@@ -40,6 +40,7 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'pry-rails'
   gem 'dotenv'
+  gem 'validates_email_format_of'
 end
 
 # Use ActiveModel has_secure_password
